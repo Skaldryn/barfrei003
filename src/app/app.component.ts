@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import {NavigationEnd, Router, RouterOutlet} from '@angular/router';
 import {NavComponent} from "./nav/nav.component";
 import {FooterComponent} from "./footer/footer.component";
+import {SkipLinkComponent} from "./skip-link/skip-link.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavComponent, FooterComponent],
+  imports: [RouterOutlet, NavComponent, FooterComponent, SkipLinkComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
