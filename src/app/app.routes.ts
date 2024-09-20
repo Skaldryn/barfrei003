@@ -31,9 +31,9 @@ export const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes,
 
-   // {
-   // anchorScrolling: 'enabled', // Enables anchor scrolling
- // }
+    {
+    anchorScrolling: 'enabled', // Enables anchor scrolling
+  }
 
   ), ReactiveFormsModule],
 

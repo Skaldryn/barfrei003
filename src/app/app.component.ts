@@ -3,6 +3,10 @@ import { RouterOutlet } from '@angular/router';
 import {NavComponent} from "./nav/nav.component";
 import {FooterComponent} from "./footer/footer.component";
 
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
+
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -12,4 +16,8 @@ import {FooterComponent} from "./footer/footer.component";
 })
 export class AppComponent {
   title = 'BarFreiFrontend002';
+
+
+
+
 }
