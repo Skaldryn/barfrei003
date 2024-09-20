@@ -3,31 +3,27 @@ main {
   color: lightgrey;
 }
 
-/* Focus styles for interactive elements */
 :focus {
-  outline: 2px solid #007bff; /* Blue color for focus indicator */
-  outline-offset: 2px;
+  outline: 2px solid #007bff;   outline-offset: 2px;
 }
 
 
 
-/* Basis-Stil für den gesamten Text */
 body {
-  font-size: 16px; /* Beispielgröße, kann je nach Design angepasst werden */
+  font-size: 16px;
 }
 
-/* Anwendung der Textabstände */
 h1,
 p,
 figcaption {
-  line-height: 1.5; /* 1.5-fache Zeilenhöhe */
-  margin-bottom: 32px; /* 2-fache Schriftgröße (16px * 2) */
-  letter-spacing: 0.12em; /* 0.12-fache Schriftgröße */
-  word-spacing: 0.16em; /* 0.16-fache Schriftgröße */
+  line-height: 1.5;
+  margin-bottom: 32px;
+  letter-spacing: 0.12em;
+  word-spacing: 0.16em;
 }
 
-/* Optional: Bildstil */
+
 figure {
-  text-align: center; /* Zentriert die Bildunterschrift */
-  margin: 0; /* Entfernt Standardmargin */
+  text-align: center;
+  margin: 0;
 }

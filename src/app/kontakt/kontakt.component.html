@@ -70,38 +70,40 @@
 <head>
 
   <style>
-    /* Styling for error messages */
+
     .error {
       color: red;
       font-size: 0.9em;
     }
   </style>
   <script>
-    // Function to check if the input fields are empty
+
     function validateForm(event) {
       event.preventDefault();
 
-      // Reset all previous error messages
+
+
       document.querySelectorAll('.error').forEach(function (el) {
         el.textContent = '';
       });
 
-      // Get the values from the input fields
+
       var name = document.getElementById('name').value.trim();
       var email = document.getElementById('email').value.trim();
       var message = document.getElementById('message').value.trim();
       var isValid = true;
 
-      // Simple email regex for validation
+
       var emailPattern = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
 
-      // Name validation
+
       if (name === "") {
         document.getElementById('nameError').textContent = "Bitte geben Sie Ihren Namen ein.";
         isValid = false;
       }
 
-      // Email validation
+
+
       if (email === "") {
         document.getElementById('emailError').textContent = "Bitte geben Sie Ihre Email-Adresse ein.";
         isValid = false;
@@ -110,21 +112,17 @@
         isValid = false;
       }
 
-      // Message validation
+
       if (message === "") {
         document.getElementById('messageError').textContent = "Bitte geben Sie eine Nachricht ein.";
         isValid = false;
       }
 
-      // If the form is valid, show success message
       if (isValid) {
         alert("Formular erfolgreich gesendet!");
-        // You can uncomment the next line to actually submit the form if needed
-        // document.getElementById('contactForm').submit();
-      }
+       }
     }
 
-    // Attach the validateForm function to the form's submit event
     window.onload = function() {
       document.getElementById('contactForm').addEventListener('submit', validateForm);
     };

@@ -3,9 +3,9 @@ main {
   color: lightgrey;
 }
 
-/* Focus styles for interactive elements */
+
 :focus {
-  outline: 2px solid #007bff; /* Blue color for focus indicator */
+  outline: 2px solid #007bff;
   outline-offset: 2px;
 }
 
@@ -14,16 +14,19 @@ main {
 
 
 .navbar-nav .nav-link {
-  margin-right: 15px; /* Abstand zwischen den Links */
+  margin-right: 15px;
 
 
-  min-height: 44px; /* Mindesthöhe für die Links */
-  min-width: 44px; /* Mindestbreite für die Links */
+
+  min-height: 44px;
+
+  min-width: 44px;
 
 
-  font-size: 18px; /* Schriftgröße anpassen */
-  padding: 10px 20px; /* Abstand um die Links herum */
 
+  font-size: 18px;
+
+  padding: 10px 20px;
 }
 
 
@@ -32,7 +35,7 @@ main {
 }
 
 .nav-link:focus {
-  outline: 2px solid #007bff; /* Highlight color for focused elements */
+  outline: 2px solid #007bff;
   outline-offset: 2px;
 }
 
@@ -49,10 +52,10 @@ h1,
 h2,
 p,
 figcaption {
-  line-height: 1.5; /* 1.5-fache Zeilenhöhe */
-  margin-bottom: 32px; /* 2-fache Schriftgröße (16px * 2) */
-  letter-spacing: 0.12em; /* 0.12-fache Schriftgröße */
-  word-spacing: 0.16em; /* 0.16-fache Schriftgröße */
+  line-height: 1.5;
+  margin-bottom: 32px;
+  letter-spacing: 0.12em;
+  word-spacing: 0.16em;
 }
 
 
