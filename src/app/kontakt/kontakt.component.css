@@ -10,6 +10,22 @@ main {
   outline-offset: 2px;
 }
 
+
+.form-control {
+  width: 100%; /* Full width */
+}
+
+/* Optional: Adjust container for better spacing */
+.container {
+  max-width: 100%; /* Make the container take more space */
+}
+
+fieldset {
+  width: 80%; /* Reduce the margin for the entire form */
+  margin: 0 auto; /* Center the form */
+}
+
+
 /* Button styling */
 button {
   width: 150px; /* Adjust the width */

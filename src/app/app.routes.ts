@@ -33,7 +33,7 @@ export const routes: Routes = [
 
    // {
    // anchorScrolling: 'enabled', // Enables anchor scrolling
- // }
+  //}
 
   ), ReactiveFormsModule],
 
