@@ -4,6 +4,19 @@ main {
 }
 
 
+main {
+  display: flex; /* Ensure main is a flex container */
+  flex-direction: column; /* Align children in a column */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 100vh; /* Full viewport height */
+
+  padding-top: 60px; /* Platz schaffen für die Navigationsleiste */
+
+}
+
+
+
 /* Focus styles for interactive elements */
 :focus {
   outline: 2px solid #007bff; /* Blue color for focus indicator */
@@ -13,16 +26,18 @@ main {
 
 .form-control {
   width: 100%; /* Full width */
+
 }
 
 /* Optional: Adjust container for better spacing */
 .container {
-  max-width: 100%; /* Make the container take more space */
+  max-width: 1000px;
+  width: 100%; /* Make the container take more space */
 }
 
 fieldset {
-  width: 80%; /* Reduce the margin for the entire form */
-  margin: 0 auto; /* Center the form */
+  width: 450%; /* Reduce the margin for the entire form */
+
 }
 
 
