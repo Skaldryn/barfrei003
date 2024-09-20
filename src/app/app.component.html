@@ -339,11 +339,16 @@
 <!--
 <a class="skip-link" [routerLink]="[currentUrl]" [fragment]="'main'">Skip to Main Content</a>
 -->
+<!--
+<app-skip-link></app-skip-link>
+-->
 
-<a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+<a href="#" class="skip-link" (click)="skipToMainContent($event)">Skip to main content</a>
 
 
 <app-nav></app-nav>
-
+<main id="main-content">
 <router-outlet />
+</main>
+
 <app-footer></app-footer>

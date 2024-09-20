@@ -6,9 +6,12 @@ import { filter } from 'rxjs/operators';
   standalone: true,
   imports: [],
   templateUrl: './skip-link.component.html',
-  styleUrl: './skip-link.component.css'
-})
-export class SkipLinkComponent {
+  styleUrl: './skip-link.component.css',
+  })
+
+
+export class SkipLinkComponent
+{
 
   skipLink: string = '';
 
