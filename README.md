@@ -1,27 +1,58 @@
-# BarFreiFrontend002
+# ReadME.md
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
+Barrierefreie Webentwicklung
 
-## Development server
+Die Semesteraufgabe dieses Moduls war es, eine Webanwendung zu schreiben.
+Aufgabe war es sich 6 Kriterien aus den Web Content Accessibility Guidelines (WCAG) 2.2. zu nehemn und diese zu Implementieren. 
+Zusätzlich sollte das Projekt noch folgendes enthalten.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Verwendung von Semantisches  Markup.
+- Das Projekt ist über die Tastatur bedienbar.
+- Die Sprache im Dokument ist angegeben.
+- Ein Fokus-ring ist bei jedem Element sichtbar 
+- Ein Skip-link ist Vorhanden, um Bereiche zu überspringen.
 
-## Code scaffolding
+Die 6 WCAG 2.2. Kriterien
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. 1.1.1 Non-text Content
+2. 1.4.3 Contrast (Minimum)
+3. 3.2.3 Consistent Navigation
+4. 2.5.5 Target Size (Enhanced)
+5. 3.3.2 Labels or Instructions
+6. 1.4.12 Text Spacing
 
-## Build
+Für mein Projekt habe ich mich dazu entschieden die Webseite einer Galerie zu erstellen.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Homepage 
+Hier erfährt man etwas über die Galerie.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![img_1.png](img_1.png)
 
-## Running end-to-end tests
+## Ausstellungen
+Diese Seite zeigt dem Besucher eine Übersicht über die Ausstellungen, die es in der Galerie gibt.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![img_3.png](img_3.png)
 
-## Further help
+## Kontakt
+Die Kontaktseite erlaubt es Besuchern mit der Galerie in Kontakt zu treten. 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+![img_2.png](img_2.png)
+
+
+
+
+
+## Installation 
+
+Klone das Repository auf deinen lokalen Rechner.
+git clone https://gitlab.rz.htw-berlin.de/Alice.Boeddinghaus/barfrei002.git
+
+Führe dann im Terminal 'npm install' aus.
+
+Danach 'ng serve'
+
+Navigiere danach zu `http://localhost:4200/`. 
+
+Das Frontend wurde mit Angular und Bootstrap entwickelt.
