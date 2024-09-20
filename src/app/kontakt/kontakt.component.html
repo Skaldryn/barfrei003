@@ -1,4 +1,4 @@
-
+<!--
 <html lang = "deu">
 <main class="d-flex align-items-center min-vh-100">
 
@@ -18,9 +18,7 @@
       <input type="text" class="form-control form-control-lg" id="name" placeholder="Name" aria-required="true" tabindex="0">
 
 
-      <span role="alert" id="nameError" aria-hidden="true" style="color: red; display: none;">
-            Please Enter your name  .
-            </span>
+
     </div>
 
 
@@ -35,9 +33,6 @@
       <label for="email" class="form-label">Email-Adresse</label>
       <input type="email" class="form-control form-control-lg" id="email" placeholder="Email-Adresse" aria-required="true" tabindex="0">
 
-      <span role="alert" id="emailError" aria-hidden="true" style="color: red; display: none;">
-            Please Enter your email-address.
-            </span>
     </div>
 
 
@@ -47,9 +42,7 @@
       <label for="message" class="form-label">Anliegen / Nachricht</label>
       <textarea class="form-control form-control-lg" id="message" rows="5" placeholder="Anliegen / Nachricht" aria-required="true" tabindex="0"></textarea>
 
-      <span role="alert" id="messageError" aria-hidden="true" style="color: red; display: none;">
-              Please Enter your message.
-              </span>
+
     </div>
 
 
@@ -68,4 +61,69 @@
 
   </div>
 </main>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="deu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontaktformular</title>
+  <script>
+    // Function to check if the input fields are empty
+    function validateForm(event) {
+      // Prevent form submission by default
+      event.preventDefault();
+
+      // Get the values from the input fields
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var message = document.getElementById('message').value.trim();
+
+      // Check if any fields are empty
+      if (name === "" || email === "" || message === "") {
+        // Display an alert or add an error message
+        alert("Bitte füllen Sie alle Felder aus.");
+      } else {
+        // If validation is successful, submit the form using JavaScript
+        alert("Formular erfolgreich gesendet!");
+        // You can uncomment the next line to actually submit the form if needed
+        // document.getElementById('contactForm').submit();
+      }
+    }
+
+    // Attach the validateForm function to the form's submit event
+    window.onload = function() {
+      // Select the form and add an event listener
+      document.getElementById('contactForm').addEventListener('submit', validateForm);
+    };
+  </script>
+</head>
+<body>
+<main class="d-flex align-items-center min-vh-100">
+  <div id="main-content">
+    <fieldset class="container col-8">
+      <legend tabindex="0">Kontaktformular</legend>
+      <form id="contactForm" novalidate>
+        <div class="form-group mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control form-control-lg" id="name" placeholder="Name" aria-required="true" tabindex="0">
+        </div>
+
+        <div class="form-group mb-3">
+          <label for="email" class="form-label">Email-Adresse</label>
+          <input type="email" class="form-control form-control-lg" id="email" placeholder="Email-Adresse" aria-required="true" tabindex="0">
+        </div>
+
+        <div class="form-group mb-3">
+          <label for="message" class="form-label">Anliegen / Nachricht</label>
+          <textarea class="form-control form-control-lg" id="message" rows="5" placeholder="Anliegen / Nachricht" aria-required="true" tabindex="0"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-secondary btn-lg" tabindex="0">Senden</button>
+      </form>
+    </fieldset>
+  </div>
+</main>
+</body>
 </html>
