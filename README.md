@@ -56,3 +56,15 @@ Danach 'ng serve'
 Navigiere danach zu `http://localhost:4200/`. 
 
 Das Frontend wurde mit Angular und Bootstrap entwickelt.
+
+
+
+
+
+
+
+
+
+
+
+Bilderquelle: https://de.wikipedia.org/wiki/Claude_Monet
