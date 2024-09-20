@@ -1,0 +1,59 @@
+main {
+  background-color: rgb(95, 4, 4);
+  color: lightgrey;
+}
+
+
+/* Focus styles for interactive elements */
+:focus {
+  outline: 2px solid #007bff; /* Blue color for focus indicator */
+  outline-offset: 2px;
+}
+
+/* Button styling */
+button {
+  width: 150px; /* Adjust the width */
+  height: 60px; /* Adjust the height */
+  font-size: 1.2rem; /* Make text larger */
+  padding: 0.5rem; /* Add padding */
+}
+
+
+#emailError {
+  display: none;
+  font-size: 0.8em;
+}
+
+#emailError.visible {
+  display: block;
+}
+
+
+#nameError {
+  display: none;
+  font-size: 0.8em;
+}
+
+#nameError.visible {
+  display: block;
+}
+
+
+#messageError {
+  display: none;
+  font-size: 0.8em;
+}
+
+#messageError.visible {
+  display: block;
+}
+
+
+.is-invalid {
+  border-color: #dc3545;
+}
+
+.invalid-feedback {
+  display: block;
+  color: #dc3545;
+}

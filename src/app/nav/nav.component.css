@@ -1,0 +1,23 @@
+.navbar-nav .nav-link {
+  margin-right: 15px; /* Abstand zwischen den Links */
+
+
+  min-height: 44px; /* Mindesthöhe für die Links */
+  min-width: 44px; /* Mindestbreite für die Links */
+
+
+  font-size: 18px; /* Schriftgröße anpassen */
+  padding: 10px 20px; /* Abstand um die Links herum */
+
+}
+
+
+.myactive {
+  font-weight: bold;
+}
+
+.nav-link:focus {
+  outline: 2px solid #007bff; /* Highlight color for focused elements */
+  outline-offset: 2px;
+}
+
