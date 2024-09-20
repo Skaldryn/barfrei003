@@ -1,84 +1,55 @@
+/* Styling for main content */
 main {
   background-color: rgb(95, 4, 4);
   color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 160px);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
 }
 
-
-main {
-  display: flex; /* Ensure main is a flex container */
-  flex-direction: column; /* Align children in a column */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  height: 100vh; /* Full viewport height */
-
-  padding-top: 60px; /* Platz schaffen für die Navigationsleiste */
-
-}
-
-
-
-/* Focus styles for interactive elements */
 :focus {
-  outline: 2px solid #007bff; /* Blue color for focus indicator */
+  outline: 2px solid #007bff;
   outline-offset: 2px;
 }
 
-
 .form-control {
-  width: 100%; /* Full width */
+  width: 100%;
 
 }
 
-/* Optional: Adjust container for better spacing */
 .container {
   max-width: 1000px;
-  width: 100%; /* Make the container take more space */
+  width: 100%;
 }
 
 fieldset {
-  width: 450%; /* Reduce the margin for the entire form */
+  width: 100%;
 
 }
 
-
-/* Button styling */
 button {
-  width: 150px; /* Adjust the width */
-  height: 60px; /* Adjust the height */
-  font-size: 1.2rem; /* Make text larger */
-  padding: 0.5rem; /* Add padding */
+  width: 150px;
+
+  height: 60px;
+
+  font-size: 1.2rem;
+  padding: 0.5rem;
 }
 
 
-#emailError {
+#error {
   display: none;
   font-size: 0.8em;
 }
 
-#emailError.visible {
+#error.visible {
   display: block;
 }
-
-
-#nameError {
-  display: none;
-  font-size: 0.8em;
-}
-
-#nameError.visible {
-  display: block;
-}
-
-
-#messageError {
-  display: none;
-  font-size: 0.8em;
-}
-
-#messageError.visible {
-  display: block;
-}
-
 
 .is-invalid {
   border-color: #dc3545;
@@ -89,38 +60,31 @@ button {
   color: #dc3545;
 }
 
-
-
-
-
-
-
-/* Basis-Stil für den gesamten Text */
 body {
-  font-size: 16px; /* Beispielgröße, kann je nach Design angepasst werden */
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  min-height: 100vh;
 }
 
-/* Anwendung der Textabstände */
 legend,
 label,
 input,
 textarea,
 button,
 .error {
-  line-height: 1.5; /* 1.5-fache Zeilenhöhe */
-  margin-bottom: 32px; /* 2-fache Schriftgröße (16px * 2) */
-  letter-spacing: 0.12em; /* 0.12-fache Schriftgröße */
-  word-spacing: 0.16em; /* 0.16-fache Schriftgröße */
+  line-height: 1.5;
+  margin-bottom: 32px;
+  letter-spacing: 0.12em;
+  word-spacing: 0.16em;
 }
 
-/* Optional: Anpassungen für das Formular */
 .form-group {
-  margin-bottom: 24px; /* Abstand zwischen den Formularfeldern */
+  margin-bottom: 24px;
+
 }
 
 .btn {
-  margin-top: 16px; /* Abstand über dem Button */
+  margin-top: 16px;
+
 }
-
-
-
