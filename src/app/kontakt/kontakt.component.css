@@ -73,3 +73,39 @@ button {
   display: block;
   color: #dc3545;
 }
+
+
+
+
+
+
+
+/* Basis-Stil für den gesamten Text */
+body {
+  font-size: 16px; /* Beispielgröße, kann je nach Design angepasst werden */
+}
+
+/* Anwendung der Textabstände */
+legend,
+label,
+input,
+textarea,
+button,
+.error {
+  line-height: 1.5; /* 1.5-fache Zeilenhöhe */
+  margin-bottom: 32px; /* 2-fache Schriftgröße (16px * 2) */
+  letter-spacing: 0.12em; /* 0.12-fache Schriftgröße */
+  word-spacing: 0.16em; /* 0.16-fache Schriftgröße */
+}
+
+/* Optional: Anpassungen für das Formular */
+.form-group {
+  margin-bottom: 24px; /* Abstand zwischen den Formularfeldern */
+}
+
+.btn {
+  margin-top: 16px; /* Abstand über dem Button */
+}
+
+
+
