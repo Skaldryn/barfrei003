@@ -1,3 +1,10 @@
 main {
-  background-color: grey;
+  background-color: rgb(95, 4, 4);
+  color: lightgrey;
+}
+
+/* Focus styles for interactive elements */
+:focus {
+  outline: 2px solid #007bff; /* Blue color for focus indicator */
+  outline-offset: 2px;
 }

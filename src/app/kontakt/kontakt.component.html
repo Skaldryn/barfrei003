@@ -63,7 +63,9 @@
 </main>
 </html>
 -->
-<!DOCTYPE html>
+
+
+<!--
 <html lang="deu">
 <head>
   <meta charset="UTF-8">
@@ -119,6 +121,110 @@
           <label for="message" class="form-label">Anliegen / Nachricht</label>
           <textarea class="form-control form-control-lg" id="message" rows="5" placeholder="Anliegen / Nachricht" aria-required="true" tabindex="0"></textarea>
         </div>
+
+        <button type="submit" class="btn btn-secondary btn-lg" tabindex="0">Senden</button>
+      </form>
+    </fieldset>
+  </div>
+</main>
+</body>
+</html>
+-->
+
+<html lang="deu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontaktformular</title>
+  <style>
+    /* Styling for error messages */
+    .error {
+      color: red;
+      font-size: 0.9em;
+    }
+  </style>
+  <script>
+    // Function to check if the input fields are empty
+    function validateForm(event) {
+      event.preventDefault();
+
+      // Reset all previous error messages
+      document.querySelectorAll('.error').forEach(function (el) {
+        el.textContent = '';
+      });
+
+      // Get the values from the input fields
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var message = document.getElementById('message').value.trim();
+      var isValid = true;
+
+      // Simple email regex for validation
+      var emailPattern = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+
+      // Name validation
+      if (name === "") {
+        document.getElementById('nameError').textContent = "Bitte geben Sie Ihren Namen ein.";
+        isValid = false;
+      }
+
+      // Email validation
+      if (email === "") {
+        document.getElementById('emailError').textContent = "Bitte geben Sie Ihre Email-Adresse ein.";
+        isValid = false;
+      } else if (!emailPattern.test(email)) {
+        document.getElementById('emailError').textContent = "Bitte geben Sie eine gültige Email-Adresse ein.";
+        isValid = false;
+      }
+
+      // Message validation
+      if (message === "") {
+        document.getElementById('messageError').textContent = "Bitte geben Sie eine Nachricht ein.";
+        isValid = false;
+      }
+
+      // If the form is valid, show success message
+      if (isValid) {
+        alert("Formular erfolgreich gesendet!");
+        // You can uncomment the next line to actually submit the form if needed
+        // document.getElementById('contactForm').submit();
+      }
+    }
+
+    // Attach the validateForm function to the form's submit event
+    window.onload = function() {
+      document.getElementById('contactForm').addEventListener('submit', validateForm);
+    };
+  </script>
+</head>
+<body>
+<main class="d-flex align-items-center min-vh-100">
+  <div id="main-content">
+    <fieldset class="container col-8">
+      <legend tabindex="0">Kontaktformular</legend>
+      <form id="contactForm" novalidate>
+
+
+        <div class="form-group mb-3">
+          <label for="name" class="form-label">Name <span aria-hidden="true">*</span></label>
+          <input type="text" class="form-control form-control-lg" id="name" placeholder="Name" aria-required="true" tabindex="0" aria-describedby="nameError">
+          <span id="nameError" class="error" aria-live="polite"></span>
+        </div>
+
+
+        <div class="form-group mb-3">
+          <label for="email" class="form-label">Email-Adresse <span aria-hidden="true">*</span></label>
+          <input type="email" class="form-control form-control-lg" id="email" placeholder="Email-Adresse" aria-required="true" tabindex="0" aria-describedby="emailError">
+          <span id="emailError" class="error" aria-live="polite"></span>
+        </div>
+
+        <
+        <div class="form-group mb-3">
+          <label for="message" class="form-label">Anliegen / Nachricht <span aria-hidden="true">*</span></label>
+          <textarea class="form-control form-control-lg" id="message" rows="5" placeholder="Anliegen / Nachricht" aria-required="true" tabindex="0" aria-describedby="messageError"></textarea>
+          <span id="messageError" class="error" aria-live="polite"></span>
+        </div>
+
 
         <button type="submit" class="btn btn-secondary btn-lg" tabindex="0">Senden</button>
       </form>
