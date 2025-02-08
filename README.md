@@ -27,23 +27,23 @@ Für mein Projekt habe ich mich dazu entschieden die Webseite einer Galerie zu e
 Hier erfährt man etwas über die Galerie.
 
 
-![img_1.png](img_1.png)
+
 ![img_1.png](src/assets/img_1.png)
 
-![img_3.png](src/assets/img_3.png)
+
 
 
 ## Ausstellungen
 Diese Seite zeigt dem Besucher eine Übersicht über die Ausstellungen, die es in der Galerie gibt.
 
-![img_3.png](img_3.png)
+
 ![img_3.png](src/assets/img_3.png)
 
 ## Kontakt
 Die Kontaktseite erlaubt es Besuchern mit der Galerie in Kontakt zu treten. 
 
 
-![img_2.png](img_2.png)
+
 ![img_2.png](src/assets/img_2.png)
 
 
